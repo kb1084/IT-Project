@@ -1,0 +1,279 @@
+nav,
+header,
+footer{
+    display:block;
+}
+body{
+    line-height: 1;
+    margin:0;
+
+}
+.container{
+    width:100%;
+    margin:auto;
+    padding-top:2%;
+    padding-bottom:0;
+    
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+,row::after{
+    display:table;
+    clear: both;
+    content="";
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66;}
+.col-3{ width:25%;}
+.col-4{ width:33.33%;}
+.col-5{width: 41.66%;}
+.col-6{ width: 50% ;}
+.col-7{ width:58.33%;}
+.col-8{ width: 66.66%;}
+ .col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+
+
+
+nav {
+  width: 100%;
+  margin: 0;
+}
+
+nav ul {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav li {
+  list-style: none;
+  float: left;
+}
+
+ul.topnav li.topnav-right {
+  float: right;
+}
+
+ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  padding: 11px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+ul.topnav li a:hover {
+  background-color: antiquewhite;
+  color: darkred;
+}
+
+#section-1-gradient{
+  background-color:#191970;
+  text-align:center;
+    width:100%;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  background-color: white;
+}
+
+nav {
+  width: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+nav ul {
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav li {
+  list-style: none;
+  float: left;
+  background-color: white;
+}
+
+ul.topnav li.topnav-right {
+  float: right;
+  background-color: white;
+}
+
+ul.topnav li a:hover {
+  background-color: white;
+  color: darkslategray;
+}
+
+
+    
+.col-6{
+  text-align:center;
+  position:relative;
+  bottom:10px;
+  left:360px;
+  font-family:'Lato';
+  font-size:25px;
+  
+}
+.image-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-collage img {
+  width: 100%;
+  max-width: 600px;
+  margin:10px;
+  width: 700px;
+  height:450px;
+  border: 20px solid black;
+    background-color: blanchedalmond;
+    border-style:double;
+  border-radius: 60%;
+  display: flex;
+align-self: center;
+}
+#image1 {
+  margin-right: 100px;
+}
+#image2 {
+    margin-left:1150px; 
+}
+#image3 {
+  margin-right: 100px;
+}
+#image4 {
+    margin-left: 1150px;
+}
+.heading{
+    border:7px solid black;
+    background-color:floralwhite;
+    border-radius:10%;
+}
+.text1{
+    position:absolute;
+    margin-left: 1170px;
+    margin-top:12px;
+      box-sizing: border-box;
+  border: 7px solid black;
+    border-radius:4%;
+  
+    overflow: hidden;
+}
+#para1{
+    background-color:blanchedalmond;
+    font-family:inherit;
+    font-size: 21px;
+      overflow: hidden;
+}
+
+.text2{
+    margin-right: 120px;
+    position: absolute;
+    margin-top:520px;
+    box-sizing: border-box;
+  border: 7px solid black;
+    border-radius:4%;
+  
+    overflow: hidden;
+
+}
+
+#para2{
+    background-color:blanchedalmond;
+    font-family:inherit;
+    font-size: 21px;
+      overflow: hidden;
+}
+.text3{
+    position:absolute;
+    margin-left: 1170px;
+    margin-top:1050px;
+      box-sizing: border-box;
+  border: 7px solid black;
+    border-radius:4%;
+  
+    overflow: hidden;
+    
+}
+#para3{
+    background-color:blanchedalmond;
+    font-family:inherit;
+    font-size: 21px;
+      overflow: hidden;
+}
+
+.text4{
+    margin-right: 120px;
+    position: absolute;
+    margin-top:1550px;
+    box-sizing: border-box;
+  border: 7px solid black;
+    border-radius:4%;
+  
+    overflow: hidden;
+
+}
+
+#para4{
+    background-color:blanchedalmond;
+    font-family:inherit;
+    font-size: 21px;
+    overflow: hidden;
+}
+footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav li {
+    list-style: none;
+    display: flex;
+}
+
+footer nav li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0 0 0;
+    font-size: 10px;
+    background-color: white;
+    color: #666;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.list:nth-child(1){
+    position: absolute;
+    left: 5%;
+}
+
+.list:nth-child(3){
+    position: absolute;
+    right: 5%;
+}

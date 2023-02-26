@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+input{
+    background-color: rgba(121, 126, 115, 0.251) ;
+}
+body{
+    background: url("goldmania.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+td{
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+}
+a:hover{
+    color: rgb(211, 164, 93);
+}
+a{
+    padding: 4px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+td input{
+    border-radius: 5px;
+}
+td.check input{
+    margin: auto 10px;
+}
+#file{
+    border: 1px black solid;
+    border-radius: 5px;
+}
+#reset{
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: cadetblue;
+}

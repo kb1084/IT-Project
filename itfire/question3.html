@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q3</title>
+        <script>
+            function age() {
+                var d1 = document.getElementById('date').value;
+                var m1 = document.getElementById('month').value;;
+                switch(m1){
+                    case "January" :
+                        m1=01;
+                    break;
+                    case "February" :
+                        m1=02;
+                    break;
+                    case "March" :
+                        m1=03;
+                    break;
+                    case "April" :
+                        m1=04;
+                    break;
+                    case "May" :
+                        m1=05;
+                    break;
+                    case "June" :
+                        m1=06;
+                    break;
+                    case "July" :
+                        m1=07;
+                    break;
+                    case "August" :
+                        m1=08;
+                    break;
+                    case "September" :
+                        m1=09;
+                    break;
+                    case "October" :
+                        m1=10;
+                    break;
+                    case "November" :
+                        m1=11;
+                    break;
+                    case "December" :
+                        m1=12;
+                    break;
+                    default : 
+                    var str = "Invalid input!";
+                    return str;
+                }
+                var y1 = document.getElementById('year').value;
+
+                var date = new Date();
+                var d2 = date.getDate();
+                var m2 = 1 + date.getMonth();
+                var y2 = date.getFullYear();
+                var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+                if (d1 > d2) {
+                    d2 = d2 + month[m2 - 1];
+                    m2 = m2 - 1;
+                }
+                if (m1 > m2) {
+                    m2 = m2 + 12;
+                    y2 = y2 - 1;
+                }
+                var d = d2 - d1;
+                var m = m2 - m1;
+                var y = y2 - y1;
+                document.getElementById('age').value = "Your Age is : " + y;
+                document.getElementById("age").style.backgroundColor = "yellow";
+                
+
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>DATE OF BIRTH</h1>
+        <select name="" id="date">
+            <option value="Day" selected>Day</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+        </select>
+        <select id="month">
+            <option value="Month" selected>Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <select id="year">
+            <option value="Year" selected>Year</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+        </select>
+        <input type="Submit" value="Submit" onclick="age()"><br><br>
+        <input type="text" id="age" size="12px"></div>
+    </body>
+
+</html>

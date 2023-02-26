@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>Form</title>
+</head>
+<link rel="stylesheet" href="question03.css">
+<body >
+    <form>
+    <table  cellpadding="0" cellspacing="10">
+        <tr>
+            <td>Name :</td>
+            <td> <input type="text" placeholder="Enter full name" size="40"></td>
+        </tr>
+        <tr>
+            <td>Father's Name :</td>
+            <td> <input type="text" size="40"></td>
+        </tr>
+        <tr>
+            <td>Mother's Name :</td>
+            <td> <input type="text" size="40"></td>
+        </tr>
+        <tr>
+            <td>Phone Number :</td>
+            <td> <input type="text" placeholder="017XXXXXX" size="40" maxsize="40"></td>
+        </tr>
+        <tr>
+            <td>Email : </td>
+            <td><input type="text" placeholder="sample@example.com" size="40"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio">Male
+                <input type="radio">female
+                <input type="radio">other
+            </td>
+        </tr>
+        <tr>
+            <td>Date Of Birth :</td>
+            <td><input type="text" size="3" />
+                -
+                <input type="text" size="4" />
+                -
+                <input type="text" size="5" />
+                <i>(dd-mm-yyyy)</i><br>
+            </td>
+        </tr>
+        <tr>
+            <td>Address:</td>
+            <td><input type="text" size="40" placeholder="Street:-   House:-   Road:-" /></td>
+        </tr>
+
+        <tr>
+            <td>Blood group:</td>
+            <td><select >
+                    <option value="Select">Select</option>
+                    <option value="o+">o+</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                </select></td>
+        </tr>
+        <tr>
+            <td >Department:</td>
+            <td  class="check"><input type="radio" value="CSE" name="CSE"> CSE<input type="radio" value="EEE" name="EEE">
+                EEE<input type="radio" value="BBA" name="BBA"> BBA</td>
+        </tr>
+        <tr>
+            <td>Course :</td>
+            <td class="check"><input type="checkbox" value="C" name="C" /> C<input type="checkbox" value="C++" name="C++">
+                C++<input type="checkbox" value="Java" name="Java"> Java<input type="checkbox"
+                    value="AI" name="AI"> AI<input type="checkbox" value="Machine learning"
+                    name="Machine learning"> Machine learning<input type="checkbox" value="Robotics"
+                    name="Robotics"> Robotics</td>
+        </tr>
+        <tr>
+            <td>
+                Photo:
+            </td>
+            <td>
+                <input id="file" type="file" />
+            </td>
+        </tr>
+        <tr>
+            <td>Select the Date:</td>
+            <td><input type="date" /></td>
+        </tr>
+        <tr>
+            <td> Select the Time:</td>
+            <td><input type="time" /></td>
+        </tr>
+    </table>
+    <a href="https://www.google.com/">Submit</a>
+    <input id="reset" type="reset" />
+    </form>
+</body>
+
+</html>
